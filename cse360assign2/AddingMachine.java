@@ -23,7 +23,7 @@ public class AddingMachine {
     }
 
     /***
-     * @return the current total
+     * @return the current running total
      */
     public int getTotal() {
         return total;
@@ -60,37 +60,6 @@ public class AddingMachine {
         total = 0;
         transactionHistory = "0";
     }
-
-
-    public static void main(String[] args) {
-
-        AddingMachine myCalculator = new AddingMachine();
-        System.out.println("new transactionHistory: " + myCalculator.toString() + "\n");
-        System.out.println("new total = " + myCalculator.total + "\n");
-
-        myCalculator.add(1);
-        System.out.println("//////////////ADD 1//////////////////");
-        System.out.println("new transactionHistory: " + myCalculator.toString() + "\n");
-        System.out.println("new total = " + myCalculator.total + "\n");
-
-        myCalculator.add(10);
-        System.out.println("//////////////ADD 10//////////////////");
-        System.out.println("new transactionHistory: " + myCalculator.toString() + "\n");
-        System.out.println("new total = " + myCalculator.total + "\n");
-
-        myCalculator.subtract(2);
-        System.out.println("//////////////SUB 2//////////////////");
-        System.out.println("new transactionHistory: " + myCalculator.toString() + "\n");
-        System.out.println("new total = " + myCalculator.total + "\n");
-
-        myCalculator.clear();
-        System.out.println("//////////////CLEAR//////////////////");
-        System.out.println("new transactionHistory: " + myCalculator.toString() + "\n");
-        System.out.println("new total = " + myCalculator.total + "\n");
-
-
-    }
 }
-/home/angela/user_local/CSE360ProgrammingHw/cse-360-assign-2/AddingMachine.java
 
 
