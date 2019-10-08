@@ -12,33 +12,37 @@ package cse360assign2;
 public class AddingMachine {
 
 	private int total;
+	private String transactionHistory;
 
 	/***
 	 * Constructor
 	 */
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
+		transactionHistory = "0";
 	}
 
 	/***
 	 * @return the current total
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 
 	/***
 	 * @param value is added to the total variable
 	 */
 	public void add (int value) {
-		
+		total += value;
+		transactionHistory = transactionHistory + " + " value;
 	}
 
 	/***
 	 * @param value is subtracted from the total variable
 	 */
 	public void subtract (int value) {
-		
+		total -= value;
+		transactionHistory = transactionHistory + " - " value;
 	}
 
 	/***
@@ -50,9 +54,10 @@ public class AddingMachine {
 	}
 
 	/***
-	 * Clears the current total variable
+	 * Clears the current total variable and transaction history
 	 */
 	public void clear() {
-	
+		total = 0;
+		transactionHistory = "0";
 	}
 }
