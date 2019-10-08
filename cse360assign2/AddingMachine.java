@@ -2,6 +2,7 @@
  * Name: Angela Foley
  * CSE 360, Assignment 2
  * This file contains class AddingMachine.
+ * Github: https://github.com/angiecolleen8/cse-360-assign-2/blob/master/cse360assign2/AddingMachine.java
  */
 
 package cse360assign2;
@@ -15,7 +16,7 @@ public class AddingMachine {
     private String transactionHistory;
 
     /***
-     * Constructor
+     * Constructor. transactionHistory is the string that records all calculations.
      */
     public AddingMachine() {
         total = 0;  // not needed - included for clarity
